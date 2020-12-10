@@ -30,20 +30,40 @@ $(document).ready(function () {
     executeTime();
 
     
-    // setInterval(function updateTime(){
-    //     $('#current-day').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
-    // }, 1000);
     /* Use moment to capture current hour
      Evaluate time-block hours and compare them to current hour
             If past: gray
             Present: green
             Future: red
     */
+    let eachRow = $('.time-block').children('button');
+    let individualId = eachRow.attr('id');
+    console.log(individualId);
+    let hourNow = parseInt(moment().format('H'));
 
-    function evaluateHours() {
-        const currentHour = moment().hours();
-    }
+    // Array.from(eachRow).forEach(eachRow => {
+    //     let individualIds = row.id;
+    //     let eachRowsTime = []
+    // })
 
+
+
+    // function evaluateHours() {
+    //     let hourArr = [];
+    //     const currentHour = moment().hours();
+    //     let eachRow = $('.hour')
+    //     console.log(eachRow);
+    //     for (let i = 0; i < array.length; i++) {
+    //         const element = array[i];
+            
+        
+        // if(eachRow === currentHour){
+        //     console.log('row by current hr');
+        // } else {
+        //     console.log('keep working');
+        // }
+    // }
+// evaluateHours();
 
 
 
@@ -53,3 +73,8 @@ $(document).ready(function () {
 
 
 })
+
+// let createIdArray = [];
+// let rows = $('time-block');
+// let indidualIds = createIdArray.concat(rows.siblings('.hour').value);
+// console.log(createIdArray);
