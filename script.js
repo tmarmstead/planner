@@ -53,7 +53,7 @@ $(document).ready(function () {
 
             } else if (buttonId < hourNow){
             $('#nine').css("background-color", "grey");
-            $('#nine').css("opacity", "20%");
+            $('#nine').css("opacity", "5%");
         } else {
             $('#nine').css("background-color", "red");
             $('#nine').css("opacity", "20%");
